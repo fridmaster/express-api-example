@@ -11,7 +11,7 @@ app.get('/', (req, res, next) => {
     next();
 })
 
-app.get('/save-user', (req, res, next) => {
+app.post('/save-user', (req, res, next) => {
     console.log('here we has request-body', req.body);
     res.sendStatus(200);
     next();
